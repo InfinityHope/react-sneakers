@@ -1,0 +1,30 @@
+.searchBlock {
+	position: relative;
+	border: 1px solid #f3f3f3;
+	border-radius: 10px;
+	padding: 0 15px;
+
+	input {
+		border: 0;
+		padding: 13px;
+		font-size: 14px;
+		width: 200px;
+
+		&::placeholder {
+			color: #c4c4c4;
+		}
+	}
+
+	.clear {
+		position: absolute;
+		top: 14px;
+		right: 10px;
+		cursor: pointer;
+	}
+}
+
+@media (max-width: 583px) {
+	.searchBlock {
+		margin-top: 10px;
+	}
+}

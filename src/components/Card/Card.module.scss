@@ -1,0 +1,52 @@
+.card {
+	width: 215px;
+	min-height: 260px;
+	padding: 20px 30px 34px 30px;
+	background: #ffffff;
+	border: 1px solid #f3f3f3;
+	border-radius: 40px;
+	transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+	&:hover {
+		box-shadow: 0 20px 35px rgba(0, 0, 0, 0.06);
+		transform: translateY(-5px);
+	}
+
+	&Favorite {
+		position: absolute;
+		cursor: pointer;
+	}
+
+	&Img {
+		width: 100%;
+		object-fit: cover;
+	}
+
+	&Title {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		color: #000000;
+	}
+
+	&Bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		div {
+			> span {
+				font-size: 11px;
+				line-height: 13px;
+				text-transform: uppercase;
+				color: #bdbdbd;
+			}
+
+			> b {
+				font-size: 14px;
+				line-height: 17px;
+				color: #000000;
+			}
+		}
+	}
+}

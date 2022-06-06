@@ -1,0 +1,34 @@
+.cartItem {
+	background: #ffffff;
+	border: 1px solid #f3f3f3;
+	border-radius: 20px;
+	overflow: hidden;
+	padding: 10px 20px;
+
+	&Img {
+		width: 90px;
+		height: 90px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: 0 15px;
+		margin-right: 20px;
+	}
+
+	&Remove {
+		opacity: 0.5;
+		transition: opacity 0.3s ease-in-out;
+		cursor: pointer;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+	b {
+		font-size: 14px;
+	}
+}
